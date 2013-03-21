@@ -1,0 +1,126 @@
+@charset "utf-8";
+.content-box{
+	width:680px;
+	font-size:15px;
+	color:#027ABB;
+	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#personal_info td{
+padding:6px;
+}
+.book_detail td{
+padding:4px;
+}
+.book_rememder td{
+padding:4px;
+}
+
+.book_info{
+width:688px;
+border:#C8EDFF;
+border-width:1px;
+border-style:solid;
+background-color:#CEE1FF;
+color:#FFFFFF;
+}
+
+.goumai{margin-top:10px;color:#FFFFFF;text-align:center;padding-top:3px;width:60px;height:30px;display:inline-block;background:url(/static/images/common/buttons.png);background-position:-85px -62px;}
+.shiyong{margin-top:0px;color:#FFFFFF;text-align:center;padding-top:4px;width:60px;height:30px;display:inline-block;background:url(/static/images/common/buttons.png);background-position:-85px -569px;}
+.goumai{color:#FFFFFF;text-decoration:none;}
+
+.content-box-jd{
+width:690px;
+float:left;
+font-size:12px;
+}
+#book_head{
+height:23px;margin-top:10px; 
+margin-bottom:3px;
+background-image:url(/static/images/mis/use_bar.png); 
+background-position:left; 
+background-repeat:no-repeat
+}
+.book_name{
+font-size:14px;padding-left:10px;font-weight:700;float:left; background-image:url(/static/images/mis/pen.png); background-repeat:no-repeat;
+}
+.books{
+height:16px;padding:6px 3px 3px 5px;
+}
+.process{
+width:140px; 
+height:16px; 
+border-color:#0066FF; 
+border-width:1px; 
+border-style:solid; 
+float:left; 
+margin-left:3px;
+margin-right:3px;
+}
+.functionButton{
+	background-image:url(/static/images/mis/button.png);
+	border:medium none;
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:12px;
+	height:23px;
+	line-height:25px;
+	width:64px;
+	font-weight:normal;
+}
+.buyButton{
+	background-image:url(/static/images/mis/buying_now.png);
+	border:medium none;
+	color:#027ABB;
+	cursor:pointer;
+	font-size:12px;
+	height:22px;
+	line-height:24px;
+	width:99px;
+	font-weight:normal;
+}
+.point_line{
+height:1px;margin-bottom:5px;background-image:url(/static/images/mis/point.png);background-repeat:repeat-x;
+}
+.url_box{
+border:#C8EDFF;
+width:450px;	
+height:30px;
+line-height:30px;
+border-width:1px;
+border-style:solid;
+background-color:#E4F9F8;
+text-align:center;
+font-size:12px;
+font-weight:bold;
+}
+.url_box input{
+font-size:12px;
+}
+.introTable{
+border:#C8EDFF;
+width:450px;	
+line-height:30px;
+border-width:1px;
+border-style:solid;
+background-color:#E4F9F8;
+text-align:center;
+font-size:12px;
+font-weight:bold;
+
+}
+.introTable th{
+font-weight:bold;
+text-align:center;
+background-color:#C8EDFF;
+color:#ffffff;
+}
+.class_notic{
+	border:#F30 double;
+	background-color:#FCC;
+	width:445px;
+	padding:5px;
+	margin:5px 0 0 10px;
+	color:#000;
+}

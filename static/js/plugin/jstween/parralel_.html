@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>JSTween</title>
+<script language="javascript" src="Tween.js"></script>
+<script language="javascript">
+function init() {
+	
+	fsq1 = new Tween(document.getElementById('d1').style,'left',Tween.strongEaseOut, 0, -100, 1, '%');
+	fsq1.start();
+	
+	fsq2 = new Tween(document.getElementById('d2').style,'left',Tween.strongEaseOut, 100, 0, 1, '%');
+	fsq2.start();
+
+	fsq3 = new Tween(document.getElementById('d3').style,'left',Tween.strongEaseOut, 50, 0, 1, '%');
+	fsq3.start();
+}
+</script>
+</head>
+<body onLoad="init()" style="padding:0;margin:0;">
+
+<div style="width:500px;height:300px;background-color:#DEDEDE;">
+	
+	<div id="d1" style="position:relative;background-color:#CCC;width:50px;margin-left:60px;margin-top:0px;overflow:hidden;">
+	       你很帅？
+	   A： 是
+	   B：不太帅
+	</div>
+	
+	<div id="d2" style="position:absolute;top:0px;background-color:#FF0;width:50px;margin-left:125px;margin-top:0px;">
+	       你很美？
+	   A： 是
+	   B：不太美
+	</div>
+	
+	<div id="d3" style="position:absolute;top:0px;background-color:#FF0;width:50px;margin-left:850px;margin-top:0px;">
+	       你很可爱？
+	   A： 是
+	   B：不太
+	</div>
+</div>
+</body>
+</html>

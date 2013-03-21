@@ -1,0 +1,57 @@
+html{
+overflow:hidden;
+-moz-user-select:none;
+}
+#nav{
+font-size:14px;
+color:#FFFFFF;
+font-weight:bold;
+height:34px;top:0px;width:100%;background:url(/static/images/exercise/nav_bar_bg.png) 0 0 repeat-x;
+}
+#nav a{color:#FFFFFF;}
+#nav_menu{
+	width:130px;
+	_width:130px;
+	height:156px; top:34px; padding-top:8px;border-style:solid; border-color:#666666; border-width:1px;
+	background-color:#FBFBFB;
+	margin-top:-1px;
+	margin-left:1px;
+	position:absolute;
+	z-index:1000;
+	display:none;
+}
+
+#nav_menu span a{
+	_margin:0px 0px 0px 6px;
+	padding-top:6px;
+	border-bottom-color:#CCCCCC;
+	border-bottom-style:solid;
+	border-width:1px;
+	text-decoration: none;
+	color:#006699;
+	text-align:left;
+	width:130px;
+	height:24px;
+	text-height:24px;
+	display:block;
+	font-size:14px;
+}
+#nav_menu a img{
+	margin-bottom:-3px;
+	border-width:0px;
+}
+#nav_menu a:hover{
+	background-color:#EEEEEE;
+	text-decoration: none;
+	color:#000000;
+	display:block;
+}
+#nav_menu span{
+	_float:right; font-size:12px; _margin-right:3px;cursor:pointer;display:block;
+}
+#remind{
+	background:url(/static/images/exercise/reminder_bg.png) 0 0 repeat-x;width:100%;height:28px;line-height:32px;overflow:hidden;
+}
+#remind_box{
+	position:absolute; bottom:0px;width:100%;left:0px;font-size:12px;
+}	

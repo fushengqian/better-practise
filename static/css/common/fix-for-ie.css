@@ -1,0 +1,105 @@
+﻿.mini-nav .left ul,.mini-nav .right ul,.desc-list span,.recom-list li,.public-notice h3,.public-notice ul,.more-exam-list li,.dl-exam-info dd,.other-type li,.public-form .hd,.public-form .bd,.tab-switch li,.nav-title li,.city-select li,.school-select li,.query-list li,.layer-upload .left,.layer-upload .right,.top-news-box .hd h3,.layer-exam .top .btn-gray span,.app-info dl,.order-info li,.pm-exer .photo,.pm-exer .info,.nav-cur li,.btns-area,.pm-buy .photo,.pm-buy .info,.dl-query-result dd,.box-hot .hd h3,.box-hot .cell,.bank-list dt, .bank-list dd{display:inline !important;zoom:1 !important;}
+
+.app-info dl dd,.my-board .cur, .my-board li:hover,.dl-side-menu li a,.new-side-box .new-my-board .cur a, .my-board li:hover a,.list-exam li{zoom:1}
+
+
+.new-side-box .new-my-board .cur, .my-board li:hover{margin-right: -1px;zoom:1;position: relative;z-index: 1;}
+
+.mini-nav .left ul{_vertical-align:-2px;}
+.mini-nav .right ul{_vertical-align:-2px;}
+.main-nav .nav li{float:left;position:relative;z-index:200;background:url(../../images/common/header.png) right -270px no-repeat;}
+.main-nav .nav li.cur{margin-left:-2px;}
+.mini-nav .w{z-index:299;}
+.main-header .w{z-index:199;}
+.mini-nav .left .omega{margin-top: -2px;}
+
+.left-right-wrap .left{position: relative;z-index: 1;}
+.left-right-wrap {zoom:1;}
+
+/*学习板*/
+.user-center .left-right-wrap{padding-left:10px !important;}
+.user-center .user-info .left{width:60%;}
+.user-center .user-info .right{width:35%;}
+.user-center .left-right-wrap .left{height:210px;}
+
+/*银行列表*/
+.bank-list label{position:relative;}
+.bank-list img{position:absolute;top:-10px;}
+.bank-list dt{margin-top: 0;}
+.pm-exer .info{padding-left:160px;}
+
+.btn-allow,.btn-allow span,.btn-submit,.btn-submit span,.btn-deny,.btn-deny span,.btn-cancel,.btn-cancel span,.btn-red,.btn-red span,.btn-cyan,.btn-cyan span,.list-tags li,.btn-blue,.btn-blue span{*display:inline;*zoom:1;}
+
+/*ie6/7 has extra side padding*/
+.btn-submit,.btn-allow,.btn-cancel,.btn-deny{*overflow:visible;}
+
+button.btn-submit{white-space:nowrap;background-color:transparent;padding-right:10px;height:30px;vertical-align:middle;}
+button.btn-submit span{*padding-left:10px;}
+button.btn-deny, button.btn-allow,button.btn-deny span, button.btn-allow span{white-space:nowrap;border:none;width:auto;text-align:center;}
+button.btn-allow,button.btn-deny{color:#666; display:inline;background-color:transparent !important;}
+button.btn-allow{background-color:#FF872D;color:#fff;}
+
+button.btn-allow-disabled{}
+button.btn-allow-disabled span{background-position:left -158px ;cursor:not-allowed !important}
+
+button.btn-deny-disabled span{background-position:left -158px !important;cursor:not-allowed !important}
+button.btn-deny-disabled,button.btn-allow-disabled{background-position:right -182px !important;}
+
+button.btn-deny{}
+.btn-start-disabled{background-position:0 -77px;}
+.btn-point-disabled{background-position:0 -155px;}
+
+.btn-allow-disabled,.btn-deny-disabled,.btn-start-disabled,.btn-point-disabled,.btn-deny-disabled{cursor:no-allowed;}
+
+.list-exam button.btn-deny{background-color:#E5E5E5;vertical-align:middle;}
+.list-exam button.btn-allow{vertical-align:middle;}
+
+button.btn-allow,button.btn-allow-disabled{padding-right:8px;height:23px;line-height:23px;}
+button.btn-allow span{padding-left:8px;}
+button.btn-deny{padding-right:8px;background-position-y:-134px;height:23px;line-height:23px;}
+button.btn-deny span{padding-left:8px;}
+
+.pm-buy .info{padding-left: 0;}
+.table-invoice span{zoom:1;}
+.layer-exam .top h1{zoom:1;margin-top: 20px;}
+
+.layer .top-l,.layer .top-r,.layer .bottom-l,.layer .bottom-r,.layer .mid-l,.layer .mid-r,.layer .top-c,.layer .bottom-c,.layer .layerBoxTop .btn-close{_background-image:url(../../images/common/layer-png8.png);filter:alpha(opacity=75);}
+.layer .layerBoxTop .btn-close{margin-top:0px;filter:alpha(opacity=100);}
+.layer-bg,.layer-fix-ie6{_height:expression((document.documentElement.scrollHeight>document.documentElement.offsetHeight)? document.documentElement.scrollHeight:document.documentElement.offsetHeight-4)}
+.layer-fix-ie6{position:absolute;left:0;top:0;width:100%;z-index:-1;filter:alpha(opacity=0);}
+
+
+
+.btn-join,.btn-upgrade,.icon-has,.btn-signin,.btn-start,.btn-point,.btn-exit,.widget-support h3,.layer-exam .top .stop{overflow:hidden;line-height:0;font-size:0;zoom:1;}
+.btn-allow .icon-buy{zoom:1;margin-top: 3px;vertical-align:-1px;}
+
+.app-info dd{display: block;}
+
+.c-gray .hd{padding:5px 10px;background-color:#F7F7F7;border-bottom:1px solid #ECECEC;}
+.c-gray .hd h3{font-weight:bold;font-size:14px;color:#000;}
+.c-gray .hd .more a{color:#999;}
+.c-gray .hd .more a:hover{color:#333;}
+
+.page-nav{padding-bottom: 1px;}
+.btn-page-prev,.btn-page-next{padding-top:2px;}
+a.btn-page-prev-disabled .icon-arrow-left{background-position:-184px -17px;}
+a.btn-page-next-disabled .icon-arrow-right{background-position:-150px -17px;}
+
+.list-exam button.btn-deny{background-color:#E5E5E5;vertical-align:middle;}
+.list-exam li{width:148px;vertical-align:top;}
+.list-exam button.btn-allow{vertical-align:middle;margin-right: 10px;}
+
+.layer-exam .top h1{background-image:url(../../images/exam/h1-png8.png);margin-top: 17px;}
+.layer-exam .top h2{background-image:url(../../images/exam/h2-png8.png);}
+.layer-exam .top .btn-gray{margin-top:-5px;}
+.layer-exam .top .btn-gray span{margin-bottom: 1px;position: relative;top:0px;padding-bottom: 1px;}
+.layer-exam .top .btn-gray i{_margin:5px 0;_padding-bottom:0px;}
+.layer-exam .top .time{vertical-align:0px;}
+.layer-exam .btn-gray span{cursor:pointer;zoom:1;margin-bottom: 1px;}
+.layer-exam .btn-gray {margin-top: -1px;}
+.layer-exam .btn-gray i{margin:5px 0 3px;padding-bottom:5px;}
+.form-invoice .bd label input{margin-top:3px;}
+.layer-exam .top .time{background-image:url(../../images/exam/time-png8.png)}
+
+.pm-exer .info{padding-left: 10px;}
+.pm-exer-lite .info{padding-left: 0px;}

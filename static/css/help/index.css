@@ -1,0 +1,10 @@
+﻿.list-help li{font-size:14px;}
+.list-help span{margin-right:5px;font-weight:bold;}
+.icon-contact-mail,.icon-contact-tel{width:31px;height:31px;display:inline-block;vertical-align:middle;background-image:url(/static/images/help/contact-icon.png);background-repeat:no-repeat;}
+.icon-contact-mail{background-position:0 0;}
+.icon-contact-tel{background-position:0 -32px;}
+.contact-info{padding:20px 10px 0;}
+.contact-info .photo-mode{margin-bottom:20px;}
+.contact-info .photo{width:40px;}
+.contact-info .info{padding-left:40px;}
+.contact-info .info strong{display:block;color:#000;padding-bottom:5px;}

@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>JSTween</title>
+<script language="javascript" src="Tween.js"></script>
+<script language="javascript" src="OpacityTween.js"></script>
+<script language="javascript" src="ColorTween.js"></script>
+<script language="javascript" src="Sequence.js"></script>
+
+<script language="javascript">
+function init(){
+	t1 = new Sequence();
+	t2 = new Sequence();
+	t3 = new Sequence();
+	t4 = new Sequence();
+	for(var i = 1; i < 4; i++){
+		var elem = document.getElementById('sq' + i);
+		t1.addChild(new OpacityTween(elem,Tween.bounceEaseOut,100,0,1));
+		t2.addChild(new ColorTween(elem.style,'backgroundColor',Tween.bounceEaseOut,'FF0000','00FF00',1));
+		t3.addChild(new Tween(elem.style,'width',Tween.bounceEaseOut,25,100,0.5,'px'));
+	}
+	t4.addChild(t3);
+	t4.addChild(t2);
+	t4.addChild(t1);
+}
+function dumpThis(a){
+	var z = '';
+	for(var i in a){
+		z += i + ' : ' + a[i] + '\n';
+	}
+	alert(z);
+}
+</script>
+<style>
+.square{
+float:left;
+position:relative;
+filter:Alpha(opacity=100);
+}
+.bgRed{
+background-color:#FF0000;
+}
+#sq1{
+left:10px;
+}
+#sq2{
+left:20px;
+}
+#sq3{
+left:30px;
+}
+</style>
+</head>
+<body onload="init()">
+<div style="clear:both;">
+<pre>
+1°) I create 4 sequences
+
+t1 = new Sequence();
+t2 = new Sequence();
+t3 = new Sequence();
+t4 = new Sequence();
+
+2°) I add Tweens to these sequences for each square
+
+for(var i = 1; i < 4; i++){
+	var elem = document.getElementById('sq' + i);
+	t1.addChild(new OpacityTween(elem,Tween.bounceEaseOut,100,0,1));
+	t2.addChild(new ColorTween(elem.style,'backgroundColor',Tween.bounceEaseOut,'FF0000','00FF00',1));
+	t3.addChild(new Tween(elem.style,'width',Tween.bounceEaseOut,25,100,0.5,'px'));
+}
+
+3°)
+I add the first 3 sequences to the 4th (sequence of sequences)
+
+t4.addChild(t3);
+t4.addChild(t2);
+t4.addChild(t1);
+
+</pre>
+</div>
+<div style="clear:both;">
+<div id="sq1" class="square bgRed" style="width:25px;height:25px;"></div>
+<div id="sq2" class="square bgRed" style="width:25px;height:25px;"></div>
+<div id="sq3" class="square bgRed" style="width:25px;height:25px;"></div>
+</div>
+
+<div style="clear:both;padding-top:25px;">
+<h4>Sequence t1 : opacity</h4>
+<input type="button" onclick="t1.start();" value="start()"><input type="button" onclick="t1.stop();" value="stop()"><input type="button" onclick="t1.resume();" value="resume()"><input type="button" onclick="t1.rewind();" value="rewind()"><input type="button" onclick="t1.fforward();" value="fforward()">
+</div>
+<div style="clear:both;">
+<h4>Sequence t2 : color</h4>
+<input type="button" onclick="t2.start();" value="start()"><input type="button" onclick="t2.stop();" value="stop()"><input type="button" onclick="t2.resume();" value="resume()"><input type="button" onclick="t2.rewind();" value="rewind()"><input type="button" onclick="t2.fforward();" value="fforward()">
+</div>
+<div style="clear:both;">
+<h4>Sequence t3 : size</h4>
+<input type="button" onclick="t3.start();" value="start()"><input type="button" onclick="t3.stop();" value="stop()"><input type="button" onclick="t3.resume();" value="resume()"><input type="button" onclick="t3.rewind();" value="rewind()"><input type="button" onclick="t3.fforward();" value="fforward()">
+</div>
+<div style="clear:both;">
+<h4>Sequence t4 : Sequence t3 + Sequence t2 + Sequence t1</h4>
+<input type="button" onclick="t4.start();" value="start()"><input type="button" onclick="t4.stop();" value="stop()"><input type="button" onclick="t4.resume();" value="resume()"><input type="button" onclick="t4.rewind();" value="rewind()"><input type="button" onclick="t4.fforward();" value="fforward()">
+</div>
+
+</body>
+</html>
