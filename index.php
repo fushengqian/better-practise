@@ -1,7 +1,4 @@
 <?php
-
-ini_set('display_errors',1);
-
 $yii = dirname(__FILE__).'/framework/yii.php';
 $config = dirname(__FILE__).'/protected/config/main.php';
 define('MICRO_TIME', time());
