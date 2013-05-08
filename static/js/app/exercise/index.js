@@ -51,7 +51,14 @@ $(function(){
 			function () { 
 				alert('开灯请选择颜色！');
 			} 
-		);
+	);
+	
+	//章节切换
+	$('#changeChapter').bind('click', function(){
+		 var GB_ANIMATION = true;
+		 GB_showCenter(this.title, '/chapter/app?course_id='+$("#course_id").val(), 0, 550);
+		 return;
+	});
 	
 	//绑定点击下一题
 	$('#nextQuestion').bind('click', function() {

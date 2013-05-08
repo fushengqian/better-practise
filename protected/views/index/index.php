@@ -18,8 +18,8 @@
 <link href="/static/css/exercise/nav.css" type="text/css" rel="stylesheet">
 <link href="/static/js/plugin/GreyBox/greybox/gb_styles.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-.selected{width:30px;height:30px;padding-top:5px;padding-left:6px;padding-bottom:5px;padding-right:5px;background-image:url(/static/images/exercise/selected.png);}
-.select{width:30px;height:30px;padding-top:5px;padding-left:6px;padding-bottom:5px;padding-right:5px;}
+.selected{width:34px;height:30px;padding-top:5px;padding-left:6px;padding-bottom:2px;padding-right:5px;background:url(/static/images/exercise/selected.png) no-repeat;background-size:34px 30px;}
+.select{width:34px;height:30px;padding-top:5px;padding-left:6px;padding-bottom:2px;padding-right:5px;}
 </style>
 <script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/core.js"></script>
@@ -40,7 +40,7 @@
 </div>
 <!-- title开始 -->
 <div id="nav"><img id="menu_btn" align="absmiddle" style="cursor:pointer" src="/static/images/exercise/nav_button.png">
-&gt;&gt;在线练习 &gt; <?php echo $course_name;?> &gt; <?php echo $chapter_name;?><span style="position:absolute;_top:5px;right:5px;"><a target="_blank" href="/help"><img align="absmiddle" src="/static/images/exercise/help.gif">帮助</a></span>
+&gt;&gt;在线练习 &gt; <?php echo $course_name;?> &gt; <?php echo $chapter_name;?><span style="position:absolute;_top:5px;right:5px;"><a id="changeChapter" href="javascript:;"><img align="absmiddle" src="/static/images/exercise/change.png">章节切换</a>&nbsp;&nbsp;<a target="_blank" href="/help"><img align="absmiddle" src="/static/images/exercise/help.gif">帮助</a></span>
 </div>
      <input id="course_id" type="hidden" value="<?php echo $question[0]['course_id'];?>">
 	 <input id="part" type="hidden" value="<?php echo $question[0]['part'];?>">
@@ -106,7 +106,7 @@
     </div>
 	<div id="4" class="pre_question"></div>
 	
-	<div style="position:absolute;top:38px;left:100px;font-size:12px;">
+	<div style="position:absolute;top:38px;left:70px;font-size:12px;">
 	    <a style="color:blue;" href="javascript:add_note();"><img align="absmiddle" src="/static/images/exercise/tag_edit.gif"> 添加笔记 ↓</a>
 	    <a style="color:blue;" href="javascript:add_wrong();"><img align="absmiddle" src="/static/images/exercise/tag_remove.gif"> 我要报错 ↓</a>
 	    <a style="color:blue;" href="javascript:add_analysis();"><img align="absmiddle" src="/static/images/exercise/tag_add.gif"> 贡献解析 ↓</a>
@@ -157,18 +157,18 @@
 				<option style="background-color:#FFFFFF" value="#FFFFFF">&nbsp;</option>
 			</select>
 	        <a href="javascript:;" id='turnoff'><img align="absbottom" src="/static/images/exercise/light.png"><b style="color:#FFFFFF;">开/关灯</b></a>
-	        <span style="position:absolute; right:5px;font-weight:bold; color:#F00">※本系统IE6浏览器可能有些问题，请换用IE7以上版本，推荐使用<a target="_blank" href="http://www.firefox.com.cn/download/">火狐浏览器</a></span>
+	        <span style="position:absolute; right:5px;font-weight:bold; color:#F00">※本系统IE6浏览器可能有些问题，请换用IE7以上版本，推荐使用<a target="_blank" href="http://www.firefox.com.cn/download/">火狐、360、chrome等浏览器</a></span>
 		</div>
 	</div>
 	<!-- end 底部工具栏 -->
 	
-<div id="bottom_line">▼此题我已掌握，不需再次复习</div>
+<div id="bottom_line">▼此题我已掌握，不需复习</div>
 <div class="reshow_tip" style="display:none;">做错的题目会自动落入错题库，十分钟后会再次出现！</div>
 <img src="/static/images/exercise/daan.gif" id="nextQuestion">
 <!-- 菜单项 -->
 <div align="center" id="nav_menu">
 	<span><a target="_blank" href="/">&nbsp;&nbsp;<img src="/static/images/exercise/003_08.png">&nbsp;&nbsp;网站首页</a></span>
-	<span><a target="_blank" href="/mis">&nbsp;&nbsp;<img src="/static/images/exercise/003_13.png">&nbsp;&nbsp;我的课程</a></span>
+	<!--<span><a target="_blank" href="/mis">&nbsp;&nbsp;<img src="/static/images/exercise/003_13.png">&nbsp;&nbsp;我的课程</a></span>-->
 	<span><a target="_blank" href="/course-chapter-list-<?php echo $course_id;?>.html">&nbsp;&nbsp;<img src="/static/images/exercise/003_19.png">&nbsp;&nbsp;章节目录</a></span>
 	<span><a href="javascript:alert('抱歉，系统升级中..');">&nbsp;&nbsp;<img src="/static/images/exercise/003_24.png">&nbsp;&nbsp;模拟考试</a></span>
 	<span><a target="_blank" href="/course-list-0-<?php echo $course_type_id;?>.html">&nbsp;&nbsp;<img src="/static/images/exercise/003_46.png">&nbsp;&nbsp;相关课程</a></span>
